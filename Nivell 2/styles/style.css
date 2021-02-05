@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* LAYOUT */
+
+.container {
+    width: 1000px;
+    height: 800px;
+    border: solid 1px rgb(0, 0, 0);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* CSS ANIMATION */
+
+.tennis-ball {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(251, 255, 24);
+    animation-name: tennis-ball;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* KEYFRAMES */
+
+@keyframes tennis-ball {
+    0% {transform: translate(0px, 20px); width: 150px; height: 150px;}
+    33% {transform: translate(300px, 650px); width: 170px; height: 150px;}
+    66% {transform: translate(650px, 30px); width: 150px; height: 150px;}
+    100% {transform: translate(825px, 650px); width: 170px; height: 150px;}
+}
